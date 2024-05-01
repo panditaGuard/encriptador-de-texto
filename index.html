@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Referencia de la hoja de estilo de Css -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="flexbox.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonte del Proyecto Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <title>Encriptador de texto</title>
+</head>
+
+<body>
+    <!-- <header class="encabezado">
+        <h1><img src="img/Logo.png" alt="Logo"></h1>
+    </header> -->
+
+    <main class="container">
+        <!-- Contenido del encriptador -->
+        <section class="encriptador_container">
+            <h1><img src="img/Logo.png" alt="Logo"></h1>
+            <form class="encriptador_form">
+                <textarea class="texto" id="texto_in" name="" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="botones">
+                    <div class="advertencia">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi-exclamation-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4m.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2"/>
+                      </svg>
+                        <p>Solo las letras minúsculas y sin acentos</p>
+                    </div>
+                    <div class="botones_container">
+                        <button onclick="botonEncriptar(); return false;" class="boton_encriptar">Encriptar</button>
+                        <button onclick="botonDesencriptar(); return false;" class="boton_desencriptar">Desencriptar</button>
+                    </div>
+                    
+                </div>
+                
+            </form>
+        </section>
+        <!-- Contenido del mensaje encriptado o desencriptado -->
+        <section class="mensaje_container">
+            <div class="imagen" id="imagen_id">
+                <img src="img/Muñeco.png" alt="">
+            </div>
+                
+            <div class="texto_encriptado">
+                <div class="aviso" id="aviso_id">
+                    <h2 class="aviso_mensaje1">Ningún mensaje fue encontrado</h2>
+                    <h3 class="aviso_mensaje2">Ingresa el texto que desees encriptar o desencriptar en minúsculas</h3>
+                </div>
+                <textarea class="mensaje__encriptado" name="" id="mensaje_encriptado" cols="30" rows="10" placeholder=""></textarea>
+                <div class="boton___copiar" id="boton__copiar">
+                    <button onclick="copiar(); return false;" class="boton_copiar">Copiar texto</button>
+                </div>
+                
+            </div>
+            
+
+        </section>
+
+    </main>
+    <footer>
+        <div class="pie">
+            <h1>Elaborado por Ivan Imanol Robles Mejia</h1>
+            <h2>2024</h2>
+        </div>
+        
+    </footer>
+    <script src="app.js" defer></script>
+</body>
+
+</html>
